@@ -1,0 +1,24 @@
+{
+
+"-Nku7oWidqwh8j6sC5xt": {
+  "title":"Arrays",
+  "description":"Arrays are containers that hold variables; they're used to group together similar variables. You can think of arrays like shelves at a pet store. The array would be the shelf, and the animals in cages are the variables inside.",
+  "language":"Multiple",
+  "time":"",
+  "uid":""
+},
+"-Nku7oWj0uzcJBk-BNUp": {
+  "title":"C++",
+  "description":"C++ is a low-level yet versatile programming language. Beginnners who master this language will be able to solve complex problems and understand how programs work. ",
+  "language":"C++",
+  "time":"",
+  "uid":""
+},
+"-Nku7oWkehusdg-EN5-E":{
+  "title":"Functions",
+  "description":"A function is a block of code that can be referenced by name to run the code it contains.",
+  "language":"Multiple",
+  "time":"",
+  "uid":""
+}
+}
