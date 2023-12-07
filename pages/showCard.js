@@ -1,7 +1,17 @@
 import renderToDOM from '../utils/renderToDom';
-import clearDom from '../utils/sample_data/clearDom';
+
+const emptyCards = () => {
+  const domString = '<h1>No Cards</h1>';
+  renderToDOM('#store', domString);
+};
 
 const showCards = (array) => {
+  const clearDom = () => {
+    document.querySelector('#store').innerHTML = '';
+    document.querySelector('#add-button').innerHTML = '';
+    document.querySelector('#form-container').innerHTML = '';
+    document.querySelector('#view').innerHTML = '';
+  };
   clearDom();
 
   const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-card-btn">Add A Card</button>';
@@ -25,4 +35,4 @@ const showCards = (array) => {
   });
   renderToDOM('#store', domString);
 };
-export default showCards;
+export { showCards, emptyCards };

@@ -1,5 +1,5 @@
 import { createCard, getCards, updateCard } from '../../../api/cardData';
-import showCards from '../../../pages/showCard';
+import { showCards } from '../../../pages/showCard';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
