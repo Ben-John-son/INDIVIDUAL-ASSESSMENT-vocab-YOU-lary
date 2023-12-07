@@ -17,7 +17,7 @@ const addCardForm = (obj = {}) => {
         <label for="title">description</label>
         <input type="text" class="form-control" id="description" placeholder="Description" value="${obj.description || ''}" required>
       </div>
-      <button type="submit" class="btn btn-primary mt-3">Submit Author</button>
+      <button type="submit" class="btn btn-primary mt-3">Submit Card</button>
     </form>`;
 
   renderToDOM('#form-container', domString);

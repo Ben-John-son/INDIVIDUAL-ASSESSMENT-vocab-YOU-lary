@@ -1,5 +1,5 @@
 import { deleteCard, getCards, getSingleCard } from '../../api/cardData';
-import showCards from '../../pages/showCard';
+import { showCards } from '../../pages/showCard';
 import addCardForm from './forms/addCardForm';
 
 const domEvents = (user) => {
