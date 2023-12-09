@@ -1,5 +1,6 @@
 import { createCard, getCards, updateCard } from '../../../api/cardData';
 import { showCards } from '../../../pages/showCard';
+import timeStamp from '../../time';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
@@ -9,7 +10,8 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
         language: document.querySelector('#language').value,
-        uid: user.uid
+        uid: user.uid,
+        time: timeStamp
       };
       createCard(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
@@ -25,6 +27,7 @@ const formEvents = (user) => {
         description: document.querySelector('#description').value,
         language: document.querySelector('#language').value,
         firebaseKey,
+        time: timeStamp
       };
 
       updateCard(payload).then(() => {
