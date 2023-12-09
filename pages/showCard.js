@@ -24,7 +24,8 @@ const showCards = (array) => {
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">${item.title}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${item.language}${item.description}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">${item.language}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">${item.description}</h6>
         <hr>
         <i class="btn btn-success fas fa-eye" id="view-card-btn--${item.firebaseKey}"></i>
       

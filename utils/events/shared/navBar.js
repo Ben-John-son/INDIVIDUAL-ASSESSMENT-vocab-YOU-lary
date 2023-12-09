@@ -16,7 +16,6 @@ const navBar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="Other">Other</a>
             </li>
             <li>
             <input
