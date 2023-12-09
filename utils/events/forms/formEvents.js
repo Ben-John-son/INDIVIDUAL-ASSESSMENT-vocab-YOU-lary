@@ -4,7 +4,6 @@ import { showCards } from '../../../pages/showCard';
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A BOOK
     if (e.target.id.includes('submit-card')) {
       const payload = {
         title: document.querySelector('#title').value,
@@ -19,7 +18,6 @@ const formEvents = (user) => {
         });
       });
     }
-    // TODO: CLICK EVENT FOR EDITING A BOOK
     if (e.target.id.includes('update-card')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
